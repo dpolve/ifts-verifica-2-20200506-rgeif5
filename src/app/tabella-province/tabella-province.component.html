@@ -1,0 +1,12 @@
+<table style="width:100%">
+  <tr>
+    <th>Regione</th>
+    <th>Provincia</th>
+    <th>Totale Casi</th>
+  </tr>
+  <tr *ngFor="let p of datiProvince">
+    <td>{{p.denominazione_regione}}</td>
+    <td>{{p.denominazione_provincia}}</td>
+    <td>{{p.totale_casi}}</td>
+  </tr>
+</table>

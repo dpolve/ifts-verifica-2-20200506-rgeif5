@@ -1,0 +1,16 @@
+<table style="width:100%">
+  <tr>
+    <th>Regione</th>
+    <th>Positivi</th>
+    <th>Guariti</th>
+    <th>Deceduti</th>
+    <th>Totale Casi</th>
+  </tr>
+  <tr *ngFor="let p of datiRegione">
+    <td>{{p.denominazione_regione}}</td>
+    <td>{{p.totale_positivi}}</td>
+    <td>{{p.dimessi_guariti}}</td>
+    <td>{{p.deceduti}}</td>
+    <td>{{p.totale_casi}}</td>
+  </tr>
+</table>

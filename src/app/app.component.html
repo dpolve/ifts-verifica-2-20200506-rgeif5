@@ -1,0 +1,10 @@
+<h1>Daniele Arduini</h1>
+<p>NOTA: la versione più avanzata (con bootstrap, model e service) si trova qui: <a href="https://stackblitz.com/edit/ifts-verifica-2-20200506-avanzata" target="_new">https://stackblitz.com/edit/ifts-verifica-2-20200506-avanzata</a></p>
+
+<h2>Dati monitoraggio epidemia Coronavirus</h2>
+
+<button (click)="onRegioni()">Regioni</button>
+<button (click)="onProvince()">Province</button>
+
+<app-tabella-regioni *ngIf="visualizzaRegioni"></app-tabella-regioni>
+<app-tabella-province *ngIf="visualizzaProvince"></app-tabella-province>
